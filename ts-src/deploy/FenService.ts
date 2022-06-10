@@ -7,14 +7,14 @@ const func: DeployFunction = async function ({
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  await deploy("TestToken", {
+  await deploy("FenService", {
     from: deployer,
-    args: ["Test Token", "TEST"],
+    args: [],
     waitConfirmations: 1,
     log: true,
   });
 };
 
-func.tags = ["TestToken"];
+func.tags = ["FenService"];
 
 export default func;

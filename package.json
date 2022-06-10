@@ -19,7 +19,7 @@
     "@types/node": "^12.0.0",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
-    "chai": "^4.2.0",
+    "chai": "^4.3.6",
     "dotenv": "^10.0.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
@@ -43,5 +43,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.5.0"
-  }
+  },
+  "repository": "git@github.com:AroenvR/smartcontract-deployer.git",
+  "author": "aroenvr <aroenvr@gmail.com>"
 }
