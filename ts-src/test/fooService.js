@@ -3,7 +3,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-// cd personal-hardhat
+// cd personal-hardhat-template
 // npx hardhat test
 
 let contract;
