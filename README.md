@@ -26,19 +26,20 @@ yarn hardhat test
 ## Deploy
 
 ```
-yarn hardhat --network stardust deploy
+ts-src/deploy
+yarn hardhat --network [network-name] deploy
 ```
 
 ## Find it
 
 ```
-The new SmartContract will be under deployments/[Network]
+The new SmartContract will be under deployments/[network-name]
 ```
 
 ## Verify
 
 ```
-yarn hardhat --network stardust etherscan-verify
+yarn hardhat --network [network-name] etherscan-verify
 ```
 
 ## Check your current progress
