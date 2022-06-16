@@ -52,6 +52,14 @@ const config: HardhatUserConfig = {
         },
       },
     },
+    binance: {
+      url: `https://bsc-dataseed1.binance.org`,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+    binanceTestNet: {
+      url: `https://data-seed-prebsc-1-s1.binance.org:8545`,
+      accounts: [process.env.PRIVATE_KEY],
+    },
   },
   namedAccounts: {
     deployer: 0,
