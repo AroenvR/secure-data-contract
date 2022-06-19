@@ -1,6 +1,6 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
-const ERC20ABI = require("./util/ERC20ABI");
+const ERC20ABI = require("./util/erc20abi");
 
 let provider = ethers.getDefaultProvider();
 
