@@ -25,8 +25,7 @@ contract FooToken is ERC20 {
     * @param _to The address which will own the newly minted token(s) after the transfer.
     * @param _amount The amount of tokens to mint.
     */
-    function mint(address _to, uint256 _amount) public {
-        require(_msgSender() == creator, "You are not allowed to mint Foo tokens.");
+    function mint(address _to, uint256 _amount) public onlyCreator {
         _mint(_to, _amount);
     }
 

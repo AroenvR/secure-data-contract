@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 const { expect } = require("chai");
 
 const erc20abi = require("./util/erc20abi.json");
-const { provider, wallet, testProvider, testWallet } = require('./network-config/binanceConfig');
+const { provider, wallet, testProvider, testWallet } = require('./provider-config/binanceConfig');
 
 // BINANCE SMART CHAIN ADDRESSES
 const adressList = {

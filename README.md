@@ -1,4 +1,20 @@
-A contract template for Metis chain
+Currently supported chains: MetisDAO, Binance Smart Chain
+
+## What this template has:
+```
+Most of the code in this template is example solutions for problems you may encounter while creating / interacting with Smart Contracts
+
+For example:
+A basic Solidity object
+A basic Solidity object's service
+A basic Token
+A basic Token's service
+
+Tests for all of those
+Tests for wallet balances
+
+The tests contain examples of how a frontend could interact with SmartContracts.
+```
 
 ## Setup
 
@@ -20,7 +36,7 @@ Set up your environment variables
 ## Test
 
 ```
-yarn hardhat test
+npm run test
 ```
 
 ## Deploy
