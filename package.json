@@ -42,7 +42,8 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.5.0"
+    "@openzeppelin/contracts": "^4.5.0",
+    "crypto-js": "^4.1.1"
   },
   "repository": "git@github.com:AroenvR/smartcontract-deployer.git",
   "author": "aroenvr <aroenvr@gmail.com>"

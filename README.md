@@ -1,6 +1,6 @@
-Currently supported chains: MetisDAO, Binance Smart Chain
+Currently supported chains: Ganache server, MetisDAO, Binance Smart Chain
 
-## What this template has:
+# What this template has:
 ```
 Most of the code in this template is example solutions for problems you may encounter while creating / interacting with Smart Contracts
 
@@ -30,13 +30,15 @@ yarn install
 ## .env.example
 
 ```
-Set up your environment variables
+Set up your environment variables.
+If you're running a Ganache server, grab a private key from there.
 ```
 
 ## Test
 
 ```
 npm run test
+If you're running a Ganache server: npx hardhat --network localhost test
 ```
 
 ## Deploy
@@ -63,4 +65,10 @@ yarn hardhat --network [network-name] etherscan-verify
 Note to self if life made me wait with continuing this project: 
 cd smartcontract-deployer
 npx hardhat test
+
+Or if running a Ganache server:
+npx hardhat --network localhost test
+
+or to test a specific contract:
+
 ```
