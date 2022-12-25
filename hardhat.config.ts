@@ -11,7 +11,7 @@ import "./ts-src/scripts/accounts";
 dotenv.config();
 
 if (!process.env.PRIVATE_KEY) {
-  throw new Error("No private key");
+  throw new Error("No private key found in environment variables.");
 }
 
 const config: HardhatUserConfig = {

@@ -1,44 +1,17 @@
-Currently supported chains: Ganache server, MetisDAO, Binance Smart Chain
+Starting code taken from my personal-hardhat-template: https://github.com/AroenvR/personal-hardhat-template.git
 
-# What this template has:
-```
-Most of the code in this template is example solutions for problems you may encounter while creating / interacting with Smart Contracts
-
-For example:
-A basic Solidity object
-A basic Solidity object's service
-A basic Token
-A basic Token's service
-
-Tests for all of those
-Tests for wallet balances
-
-The tests contain examples of how a frontend could interact with SmartContracts.
-```
+# What this project is about:
+The contracts in this project are dedicated to solving the issue of storing sensitive data on a public ledger.  
+The DataStore contract can read & write cipherTexts.  
+The DataStoreService contract is for users to anonymously interact with their own DataStore.  
 
 ## Setup
 
 ```
-Check if you have yarn installed with: yarn --version
-    If it is not installed: npm install --global yarn
+In another terminal start your ganache server with: ganache
 
-(yarn init) <- not sure if necessary
-
-yarn install
-```
-
-## .env.example
-
-```
-Set up your environment variables.
-If you're running a Ganache server, grab a private key from there.
-```
-
-## Test
-
-```
-npm run test
-If you're running a Ganache server: npx hardhat --network localhost test
+npm i
+npx hardhat --network localhost test
 ```
 
 ## Deploy
@@ -46,6 +19,7 @@ If you're running a Ganache server: npx hardhat --network localhost test
 ```
 ts-src/deploy
 yarn hardhat --network [network-name] deploy
+// npx? Need to test.
 ```
 
 ## Find it
@@ -54,21 +28,16 @@ yarn hardhat --network [network-name] deploy
 The new SmartContract will be under deployments/[network-name]
 ```
 
-## Verify
-
-```
-yarn hardhat --network [network-name] etherscan-verify
-```
-
 ## Check your current progress
 ```
-Note to self if life made me wait with continuing this project: 
-cd smartcontract-deployer
+Note to self if life made me wait with continuing this project:  
+
+cd secure-data-contract  
 npx hardhat test
 
-Or if running a Ganache server:
+If running a Ganache server:  
 npx hardhat --network localhost test
 
-or to test a specific contract:
-
+or to test a specific contract (with a Ganache server):  
+npx hardhat --network localhost test ./ts-src/test/dataStoreService.js
 ```
